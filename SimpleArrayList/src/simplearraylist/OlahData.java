@@ -33,15 +33,16 @@ public class OlahData {
                 System.out.println("[ ]");
             }
             else if (j == isi[0]) {
-                System.out.print("[ " + j + ", ");
+                System.out.print("[" + j + ",");
             }
             else if (j == isi[isi.length-1]){
-                System.out.println(j + " ]");
+                System.out.println(j + "]");
             }
             else {
-                System.out.print(j + ", ");
+                System.out.print(j + ",");
             }
         }
+        System.out.println("------------------------------------");
     }
 
     //Tambah Data
@@ -58,8 +59,8 @@ public class OlahData {
             }
         }
         //tampil data
+        System.out.print("String yang ada pada data: ");
         this.TampilData();
-        System.out.println("------------------------------------");
         
     }
     
@@ -103,6 +104,9 @@ public class OlahData {
         }
         else{
             System.out.println("String " + find + " tidak ada dalam data");
+            //tampil data
+            System.out.print("String yang ada pada data: ");
+            this.TampilData();
         }
         System.out.println("------------------------------------");
     }
